@@ -3,7 +3,6 @@
 > Dự án Infrastructure as Code (IaC) theo hướng production sử dụng Terraform để triển khai máy ảo Ubuntu trên KVM/libvirt với tự động hoá bằng cloud-init.
 > 
 
-```
 
 ## 1. Tổng quan
 
@@ -21,7 +20,6 @@ Dự án này minh hoạ cách xây dựng một hệ thống **triển khai VM 
 - Bảo mật mặc định (chỉ SSH key, không cho root login)
 - Vòng đời sạch: tạo → xoá → tạo lại
 
-```
 
 ## 2. Kiến trúc
 
@@ -40,7 +38,6 @@ Mỗi VM bao gồm 3 thành phần chính:
     ISO chứa cấu hình cloud-init (`user_data`, `network_config`, `meta_data`) cho lần boot đầu
     
 
-```
 
 ## 3. Cấu trúc thư mục
 
@@ -97,7 +94,6 @@ terraform plan
 terraform apply
 ```
 
----
 
 SSH vào VM
 
@@ -105,7 +101,6 @@ SSH vào VM
 ssh assmin@192.168.122.50
 ```
 
----
 
 ## 7. Thiết kế bảo mật
 
@@ -115,7 +110,6 @@ ssh assmin@192.168.122.50
 - User sudo không phải root (`assmin`)
 - VM dạng headless (không GUI)
 
----
 
 ## 8. Dọn tài nguyên
 
@@ -134,7 +128,6 @@ lifecycle {
 }
 ```
 
----
 
 Dọn sạch hoàn toàn (manual)
 
@@ -146,7 +139,6 @@ virsh destroy master
 virsh undefine master# Xoá disk và cloud-initrm -f /kvm-storage/*.qcow2rm -f /kvm-storage/*cloudinit.iso
 ```
 
----
 
 Tạo lại môi trường
 
@@ -154,7 +146,6 @@ Tạo lại môi trường
 terraform apply
 ```
 
----
 
 ## 9. Lỗi thường gặp
 
@@ -179,7 +170,6 @@ terraform apply
 - **Không SSH được**
 → Kiểm tra SSH key, IP trong VM, cloud-init
 
----
 
 ## 10. Hướng mở rộng
 
@@ -189,7 +179,6 @@ terraform apply
 - Thêm Makefile (`make apply/destroy`)
 - CI/CD pipeline (GitHub Actions)
 
----
 
 ## Tài liệu tham khảo
 
