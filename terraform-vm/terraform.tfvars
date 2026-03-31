@@ -1,4 +1,5 @@
 base_image_path = "/kvm-storage/ubuntu-base.qcow2"
+pool_name = "kvm-pool"
 
 vms = {
   master = {
