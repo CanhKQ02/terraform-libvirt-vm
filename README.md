@@ -63,7 +63,8 @@ terraform-vm/
 - Có quyền truy cập libvirt system daemon (`qemu:///system`).
 - Có sẵn Ubuntu cloud image trên host.
 - Có SSH public key để inject vào VM ( ưu tiên dùng SSH key Ed25519 )
-chuẩn bị golden image được import vào storage pool
+
+Chuẩn bị golden image được import vào storage pool
 ```jsx
 cd /kvm-storage/
 wget https://cloud-images.ubuntu.com/jammy/current/jammy-server-cloudimg-amd64.img
