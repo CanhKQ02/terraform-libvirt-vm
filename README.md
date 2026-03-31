@@ -3,7 +3,7 @@
 > Dự án Infrastructure as Code (IaC) theo hướng production sử dụng Terraform để triển khai máy ảo Ubuntu trên KVM/libvirt với tự động hoá bằng cloud-init.
 > 
 
----
+```
 
 ## 1. Tổng quan
 
@@ -21,7 +21,7 @@ Dự án này minh hoạ cách xây dựng một hệ thống **triển khai VM 
 - Bảo mật mặc định (chỉ SSH key, không cho root login)
 - Vòng đời sạch: tạo → xoá → tạo lại
 
----
+```
 
 ## 2. Kiến trúc
 
@@ -40,7 +40,7 @@ Mỗi VM bao gồm 3 thành phần chính:
     ISO chứa cấu hình cloud-init (`user_data`, `network_config`, `meta_data`) cho lần boot đầu
     
 
----
+```
 
 ## 3. Cấu trúc thư mục
 
