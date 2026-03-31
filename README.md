@@ -83,6 +83,7 @@ Lưu ý bạn cần chỉnh sửa các giá trị trong terraform.tfvars để p
 
 ```jsx
 ## khởi tạo terraform
+cd terraform-vm
 terraform init
 
 ## Bật network libvirt 
