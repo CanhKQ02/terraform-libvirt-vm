@@ -79,6 +79,7 @@ Thiết lập trong `terraform/terraform.tfvars`:
 | `password` | Mật khẩu khởi tạo user `devops` (sensitive) |
 
 ## 6. Triển khai nhanh
+Lưu ý bạn cần chỉnh sửa các giá trị trong terraform.tfvars để phù hợp với file hệ thống của bạn
 
 ```jsx
 ## khởi tạo terraform
