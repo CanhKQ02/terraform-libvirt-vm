@@ -62,8 +62,7 @@ terraform-vm/
 - Terraform phiên bản `>= 1.5`.
 - Có quyền truy cập libvirt system daemon (`qemu:///system`).
 - Có sẵn Ubuntu cloud image trên host.
-- Có SSH public key để inject vào VM.
-- ---## ⚙️ Yêu cầu hệ thống-Linuxhostđãbật**KVM/libvirt**-Terraform>=1.5-Quyềntruycập`qemu:///system`-Ubuntucloudimage(qcow2)-SSHkey(`ssh-keygen-ted25519`)
+- Có SSH public key để inject vào VM ( ưu tiên dùng SSH key Ed25519 )
 
 ## **5. Biến cấu hình quan trọng**
 
