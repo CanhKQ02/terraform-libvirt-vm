@@ -1,0 +1,12 @@
+version: 2
+ethernets:
+  ${interface_name}:
+    dhcp4: false
+    addresses:
+      - ${ip_cidr}
+    routes:
+      - to: default
+        via: ${gateway}
+    nameservers:
+      addresses: [${dns_csv}]
+
