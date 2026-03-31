@@ -177,8 +177,6 @@ terraform apply
 - Thêm DHCP mode (IP động)
 - Hỗ trợ Bridge networking
 - Kết hợp Ansible provisioning
-- Thêm Makefile (`make apply/destroy`)
-- CI/CD pipeline (GitHub Actions)
 
 
 ## Tài liệu tham khảo
